@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 python3 - <<'PY' "$@"
 import sys
 
