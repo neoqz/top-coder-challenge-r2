@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Black Box Challenge Evaluation Script
 # This script tests your reimbursement calculation implementation against 1,000 historical cases
