@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Black Box Challenge - Results Generation Script
 # This script runs your implementation against test cases and outputs results to private_results.txt
