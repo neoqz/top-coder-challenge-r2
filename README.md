@@ -31,6 +31,17 @@ The system takes three inputs:
 
 - `public_cases.json` - 1,000 historical input/output examples
 
+## Setup
+
+Run `./setup.sh` before using the evaluation scripts. This installs the
+required tools:
+
+- `jq` for JSON parsing
+- `bc` for floating point calculations
+- the Python **NumPy** package
+
+Make sure to run this step prior to executing `eval.sh` or `generate_results.sh`.
+
 ## Getting Started
 
 1. **Analyze the data**: 
