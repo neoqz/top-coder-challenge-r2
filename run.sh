@@ -1,16 +1,24 @@
-#!/usr/bin/env bash
-python3 - <<'PY' "$@"
-import sys
+#!/bin/bash
 
-days, miles, receipts = map(float, sys.argv[1:4])
+# Black Box Challenge - Your Implementation
+# This script should take three parameters and output the reimbursement amount
+# Usage: ./run.sh <trip_duration_days> <miles_traveled> <total_receipts_amount>
 
-BASE_PER_DIEM   = 50.0
-RATE_FIRST_600  = 0.35
-RATE_AFTER_600  = 0.20
-RECEIPT_WEIGHT  = 0.80
+# Example implementations (choose one and modify):
 
-mileage = RATE_FIRST_600 * min(miles, 600) + RATE_AFTER_600 * max(miles - 600, 0)
-amount  = RECEIPT_WEIGHT * receipts + BASE_PER_DIEM * days + mileage
+# Example 1: Python implementation
+# python3 calculate_reimbursement.py "$1" "$2" "$3"
 
-print(f"{amount:.2f}")
-PY
+# Example 2: Node.js implementation
+# node calculate_reimbursement.js "$1" "$2" "$3"
+
+# Example 3: Direct bash calculation (for simple logic)
+# echo "scale=2; $1 * 100 + $2 * 0.5 + $3" | bc
+
+# Check if virtual environment exists and activate it
+if [ -d "venv" ]; then
+    source venv/bin/activate
+fi
+
+# Call our Python implementation
+python3 calculate_reimbursement.py "$1" "$2" "$3" 
