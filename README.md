@@ -49,8 +49,8 @@ Make sure to run this step prior to executing `eval.sh` or `generate_results.sh`
    - Look at `PRD.md` to understand the business problem
    - Look at `INTERVIEWS.md` to understand the business logic
 2. **Create your implementation**:
-   - Copy `run.sh.template` to `run.sh`
-   - Implement your calculation logic
+   - Create a script named `run.sh`
+   - Implement your calculation logic inside this script
    - Make sure it outputs just the reimbursement amount
 3. **Test your solution**: 
    - Run `./eval.sh` to see how you're doing
