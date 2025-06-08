@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Verify argument count
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <trip_duration_days> <miles_traveled> <total_receipts_amount>"
+    exit 1
+fi
+
 # Black Box Challenge - Your Implementation
 # This script should take three parameters and output the reimbursement amount
 # Usage: ./run.sh <trip_duration_days> <miles_traveled> <total_receipts_amount>
